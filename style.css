@@ -1,0 +1,223 @@
+/* ===== 1. BASIC SETTINGS ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f6edda;
+    color: #172b40;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== 2. NAVIGATION ===== */
+nav {
+    background: #10263d;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-family: "Pirata One", cursive;
+    margin: 0 auto 0 0;
+    color: #ffca55;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffca55;
+}
+
+/* ===== 3. HERO SECTION ===== */
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background: #183954;
+    color: white;
+    border-bottom: 6px solid #d94835;
+}
+
+.tag {
+    color: #ffca55;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+header h1 {
+    font-family: "Pirata One", cursive;
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+header p {
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 22px;
+    background: #d94835;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-btn:hover {
+    background: #ffca55;
+    color: #10263d;
+}
+
+/* ===== 4. SERVICES AREA ===== */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.section-title {
+    font-family: "Pirata One", cursive;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ===== 5. SERVICE CARDS ===== */
+.card {
+    width: 31%;
+    min-width: 240px;
+    padding: 25px;
+    border: 2px solid #dfd0b3;
+    border-radius: 12px;
+    background: #fff9ec;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* Lift card when mouse moves over it */
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px #b8aa91;
+}
+
+/* Icon and small label */
+.icon {
+    display: inline-block;
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.number {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+/* Card title */
+.card h2 {
+    font-family: "Pirata One", cursive;
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+/* Card description */
+.card p {
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 70px;
+}
+
+/* Different character-inspired colors */
+.luffy {
+    border-top: 5px solid red;
+}
+
+.zoro {
+    border-top: 5px solid green;
+}
+
+.nami {
+    border-top: 5px solid orangered;
+}
+
+.sanji {
+    border-top: 5px solid yellow;
+}
+
+.chopper {
+    border-top: 5px solid #e879a0;
+}
+
+.usopp {
+    border-top: 5px solid brown;
+}
+
+/* ===== 6. CARD BUTTONS ===== */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #10263d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #d94835;
+}
+
+/* ===== 7. FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #10263d;
+    color: white;
+}
+
+footer h2 {
+    font-family: "Pirata One", cursive;
+    color: #ffca55;
+}
+
+/* ===== 8. MOBILE SCREEN ===== */
+@media (max-width: 650px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
