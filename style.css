@@ -116,8 +116,8 @@ main {
 
 /* Lift card when mouse moves over it */
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 10px 20px #b8aa91;
+    transform: translateX(-10px);
+    box-shadow: 0 10px 20px rgb(240, 173, 57)
 }
 
 /* Icon and small label */
@@ -129,7 +129,7 @@ main {
 
 .number {
     display: block;
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 2px;
     color: #777;
 }
@@ -143,9 +143,9 @@ main {
 
 /* Card description */
 .card p {
-    font-size: 14px;
-    line-height: 1.7;
-    min-height: 70px;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 60px;
 }
 
 /* Different character-inspired colors */
